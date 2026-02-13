@@ -3,7 +3,7 @@ import { useState } from "react";
 import { ChevronRight, Heart } from "lucide-react";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
 
-const memoryImage = (filename: string) => `/memories/${encodeURIComponent(filename)}`;
+const memoryImage = (filename: string) => `${import.meta.env.BASE_URL}memories/${encodeURIComponent(filename)}`;
 
 const memories = [
   {
